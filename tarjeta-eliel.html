@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta Digital Profesional</title>
+    <style>
+        /* Configuración General */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* La Tarjeta */
+        .card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            padding: 40px;
+            text-align: center;
+            /* Ancho fluido para tablets y escritorio */
+            width: 100%;
+            max-width: 450px; 
+            transition: transform 0.3s ease;
+        }
+
+        /* Efecto sutil al pasar el mouse en PC */
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 { color: #333; margin-bottom: 5px; font-size: 1.8rem; }
+        p { color: #666; margin-bottom: 25px; }
+
+        /* Botones Adaptables */
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover { opacity: 0.9; }
+
+        .btn-contact { background-color: #25D366; } /* Color estilo WhatsApp/Llamada */
+        .btn-mail { background-color: #007bff; }
+        .btn-fb { background-color: #1877F2; }
+
+        /* Ajustes específicos para pantallas muy pequeñas */
+        @media (max-width: 400px) {
+            .card { padding: 25px; }
+            h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>Eliel Millan</h1>
+    <p>Verificación y Registro</p>
+    
+    <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 20px;">
+
+    <a href="tel:+524523070032" class="btn btn-contact">
+        📞 Guardar / Llamar
+    </a>
+    
+    <a href="mailto:verificacion@lopezimpresores.com.mx" class="btn btn-mail">
+        ✉️ Enviar Correo
+    </a>
+    
+    <a href="https://www.facebook.com/LopezImpresoresOficial" target="_blank" class="btn btn-fb">
+        f Seguir en Facebook
+    </a>
+</div>
